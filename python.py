@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-from module import function
+from module import function, new_function
 import something
 
 def function(arg1, arg2, arg3=False, arg4=1, arg5="string", arg6='string'):
@@ -13,7 +13,7 @@ def function(arg1, arg2, arg3=False, arg4=1, arg5="string", arg6='string'):
          variable = variable + arg4
          variable += 45 # comment this line
          variable += 0x9
-         # print 2
+         print 6
          arg6 += ("a string" "more string")
          bool(5 + 5)
          print 5
@@ -30,6 +30,7 @@ def otherfunction(arg, *args, **kwargs):
 # are commented
 
 if __name__ == '__main__':
-    print 'okay'
+    print 'okay then'
+    import os
     import sys
-    sys.exit(0)
+    sys.exit(3)
